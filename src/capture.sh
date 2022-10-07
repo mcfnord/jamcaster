@@ -2,7 +2,7 @@
 
 # Usage:
 # 1. Pull latest docker image (once): docker pull ghcr.io/dtinth/jamcaster:main
-# 2. Run: docker run -ti --rm --init -e JAMULUS_CLIENT_NAME=JamRec -v $PWD/private/out:/out ghcr.io/dtinth/jamcaster:main src/capture.sh <IP>:<PORT>
+# 2. Run: docker run -i --rm --init -e JAMULUS_CLIENT_NAME=JamRec -v $PWD/private/out:/out ghcr.io/dtinth/jamcaster:main src/capture.sh <IP>:<PORT>
 # 3. Recorded MP3 file appears at `private/out/output.mp3`
 
 : ${1:?"Missing Jamulus server IP:PORT"}
